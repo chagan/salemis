@@ -27,3 +27,76 @@
 
 /*Photo essay page map, for slider stories*/
 .page-template-fullwidth .mapsmarker {  float: right;}.page-template-fullwidth .slider-map {  max-width:35em;  margin-left:auto;  margin-right:auto;}
+
+.smicons {
+	float:right;
+	padding:10px;
+}
+
+.smicons img {
+	height:32px;
+	width:32px;
+}
+
+.smicons a:hover {
+	border:none;
+}
+
+#header img { 
+	max-width: 100%;
+	position:absolute;
+	z-index:-1; 
+}
+
+#header {
+	clear: both;
+	width: 100%;
+	float: left;
+	padding: 0 0 0 0;
+}
+
+#site-description {
+	font-size: 1.5em;
+}
+
+.featured-post h2.entry-title a {
+	position: absolute;
+	bottom: 136px;
+	right: 0;
+	color: #111;
+	background: #fff;
+	padding: .4em 30px .4em 1.5em;
+	font-size: 1em;
+	/*text-transform: uppercase;*/
+}
+
+.featured-post .subhead {
+	position: absolute;
+	bottom: 84px;
+	right: 0;
+	color: #111;
+	background: #fff;
+	padding: .4em 30px .4em 1.5em;
+	font-size: 1em;
+	font-family: 'Georgia', serif;
+	height: 42px;
+	max-width: 60%;
+}
+
+.featured-post:hover h2.entry-title a, .featured-post:hover .byline, .featured-post:hover .subhead{
+	color: #fff;
+	background: #111;
+}
+.featured-post .byline {
+	position: absolute;
+	bottom: 54px;
+	right: 0;
+	color: #999;
+	background: #fff;
+	padding: .4em 30px .4em 1.3em;
+	font-size: 0.9166666666666667em;
+}
+
+.featured-post h2.entry-title a {
+	text-transform: none;
+}
