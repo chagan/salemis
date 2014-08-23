@@ -3,9 +3,27 @@
  Template:     Oxygen
 */
 
-
 @import url("../oxygen/style.css");
-
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+
+/*sets fonts for subheads on front page*/.slideshow-caption {font-style:italic; font-family:Helvetica,sans-serif;}
+
+/*removes More Stories from front page*//*.page-template-front .hfeed-more {display:none;}*/
+
+/*Removes category label from front page*/
+.page-template-front .byline-cat {display:none;}
+
+/*Adds an inline option for photos*/
+.slideshow-inline {    float:left;}
+
+/*Photo essay page text*/
+.page-template-fullwidth p {  font-size:16px;  line-height:1.5em;  max-width:35em;  margin-left:auto;  margin-right:auto;}
+.page-template-fullwidth h1, h2, h3, h4 {  max-width:30em;  margin-left:auto;  margin-right:auto;}
+
+/*Fixes gallery captions floating left*/
+.page-template-fullwidth p.slideshow-caption {  max-width:none;}.page-template-fullwidth h2 {  max-width:22em;  margin-left:auto;  margin-right:auto;}
+
+/*Photo essay page map, for slider stories*/
+.page-template-fullwidth .mapsmarker {  float: right;}.page-template-fullwidth .slider-map {  max-width:35em;  margin-left:auto;  margin-right:auto;}
