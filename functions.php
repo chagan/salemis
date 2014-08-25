@@ -13,4 +13,6 @@ return coauthors( null, null, null, null, false );
 }
 add_filter( 'the_author', 'db_coauthors_in_rss' );
 
+add_filter( 'breadcrumb_trail', '__return_false' );
+
 ?>

@@ -58,13 +58,11 @@ get_header(); // Loads the header.php template. ?>
 									
 									<?php echo apply_atomic_shortcode( 'byline_date', '<div class="byline byline-date">' . __( '[entry-published]', 'oxygen' ) . '</div>' ); ?>
 				
-									<?php echo apply_atomic_shortcode( 'byline_author', '<div class="byline byline-author">' . __( 'by [entry-author]', 'oxygen' ) . '</div>' ); ?>
+									<div class="byline byline-author">by <?php if ( function_exists( 'coauthors_posts_links' ) ) { coauthors_posts_links(); } else { the_author_posts_link(); } ?></div>
 				
 									<?php echo apply_atomic_shortcode( 'byline_edit', '<div class="byline byline-edit">' . __( '[entry-edit-link]', 'oxygen' ) . '</div>' ); ?>
 			
 								</div>
-								
-								<?php echo apply_atomic_shortcode( 'byline_category', '<div class="byline byline-cat">' . __( '[entry-terms taxonomy="category" before=""]', 'oxygen' ) . '</div>' ); ?>
 								
 								<div class="entry-summary">
 									
@@ -106,7 +104,7 @@ get_header(); // Loads the header.php template. ?>
 										
 								<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
 									
-								<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( '[entry-published] / by [entry-author] / in [entry-terms taxonomy="category"] [entry-edit-link before=" / "]', 'oxygen' ) . '</div>' ); ?>
+								<div class="byline byline-author">by <?php if ( function_exists( 'coauthors_posts_links' ) ) { coauthors_posts_links(); } else { the_author_posts_link(); } ?></div>
 	
 							</div><!-- .hentry -->
 		

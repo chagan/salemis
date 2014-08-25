@@ -28,6 +28,8 @@
 /*Photo essay page map, for slider stories*/
 .page-template-fullwidth .mapsmarker {  float: right;}.page-template-fullwidth .slider-map {  max-width:35em;  margin-left:auto;  margin-right:auto;}
 
+
+/*Social media icons on the homepage*/
 .smicons {
 	float:right;
 	padding:10px;
@@ -42,6 +44,7 @@
 	border:none;
 }
 
+/*Places header image*/
 #header img { 
 	max-width: 100%;
 	position:absolute;
@@ -55,10 +58,26 @@
 	padding: 0 0 0 0;
 }
 
+/*Increase type size for site name on homepage*/
 #site-description {
 	font-size: 1.5em;
 }
 
+/*removes allcaps from post titles*/
+.hentry .entry-title, .page-template-front .hentry .entry-title {
+	text-transform: none;
+}
+
+/*Adds transition to subheads*/
+.subhead {
+	-webkit-transition: all 0.18s ease-out;
+	-moz-transition: all 0.18s ease-out;
+	-ms-transition: all 0.18s ease-out;
+	-o-transition: all 0.18s ease-out;
+	transition: all 0.18s ease-out;
+}
+
+/*Set styles for slider post titles*/
 .featured-post h2.entry-title a {
 	position: absolute;
 	bottom: 136px;
