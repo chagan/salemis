@@ -44,7 +44,7 @@ get_header(); // Loads the header.php template. ?>
 								
 								<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
 	
-								<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( '[entry-published] &middot; by [entry-author] &middot; in [entry-terms taxonomy="category" before=""] [entry-edit-link before=" &middot; "]', 'oxygen' ) . '</div>' ); ?>
+								<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( '[entry-published] &middot;', 'oxygen' )); ?> by <?php if ( function_exists( 'coauthors_posts_links' ) ) { coauthors_posts_links(); } else { the_author_posts_link(); } ?></div>
 	
 								<div class="entry-content">
 									
