@@ -119,3 +119,18 @@
 .featured-post h2.entry-title a {
 	text-transform: none;
 }
+
+@media only screen and (max-width: 767px) {
+	.featured-post .byline, .featured-post .subhead, .aside { display: none; }
+		/*Make featured post titles show up on smartphone. To disable add .featured-post h2.entry-title a, back to display:none line above*/
+	.featured-post h2.entry-title a {
+		position: absolute;
+		bottom: 50px;
+		/*right: 0;*/
+		color: #111;
+		background: #fff;
+		padding: .2em 15px .2em .75em;
+		font-size: .75em;
+		text-transform: uppercase;	
+	}
+}
